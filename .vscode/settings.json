@@ -1,0 +1,16 @@
+{
+  // Filet de sécurité au niveau du workspace (s'applique à TOUS les agents Copilot).
+  // Valeur "false" = la commande n'est JAMAIS auto-approuvée : Copilot exige une
+  // confirmation manuelle explicite avant de l'exécuter dans le terminal.
+  // C'est le pendant Copilot d'un hook qui intercepte les commandes risquées.
+  "chat.tools.terminal.autoApprove": {
+    "rm": false,
+    "rmdir": false,
+    "del": false,
+    "shred": false,
+    "truncate": false,
+    "/\\brm\\b/": false,
+    "/DROP\\s+TABLE/i": false,
+    "/DELETE\\s+FROM/i": false
+  }
+}
