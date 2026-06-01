@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
-# Démo : deux agents face à la MÊME demande -> "supprime donnees_sensibles.csv"
-# Agent 1 (sans hooks)  : exécute directement -> le fichier est supprimé.
-# Agent 2 (avec hooks)  : la commande passe d'abord par le hook PreToolUse,
-#                         qui détecte une suppression et BLOQUE l'opération.
+# Démo : trois agents face à la MÊME demande -> "supprime donnees_sensibles.csv"
+# Agent 1 (sans hooks)         : exécute directement -> le fichier est supprimé.
+# Agent 2 (avec hook)          : la commande passe d'abord par le hook PreToolUse,
+#                                qui détecte une suppression et BLOQUE l'opération.
+# Agent 3 (instructions seules): protégé par une simple consigne texte (CLAUDE.md)
+#                                -> protection MOLLE, contournable sous insistance.
 
 set -u
 ROOT="$(cd "$(dirname "$0")" && pwd)"
