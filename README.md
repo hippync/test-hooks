@@ -1,5 +1,10 @@
 # Démo — Hooks de sécurité Claude Code
 
+## Source : 
+- [Use tools with agents](https://code.visualstudio.com/docs/copilot/agents/agent-tools)
+- [Hooks reference for Claude](https://code.claude.com/docs/en/hooks)
+- [Completely understand hooks in less than 20 minutes](https://www.youtube.com/watch?v=03CfGf9iw_U)
+
 Cette démo compare **trois agents** face à la même demande dangereuse
 (« supprime le fichier de données sensibles ») :
 
